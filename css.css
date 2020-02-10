@@ -1,68 +1,130 @@
-<style>
 body{
-margin:10;
-padding:10;
-font:Comic Sans MS;
-font-size:20px;
+	margin:0;
+	padding-left:0;
+	background-color:none;
 }
-ul{
-margin:0px;
-padding:0;
-list-style:none;
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
 }
-a{
-text-decoration: none;
-}
-ul li {
-background-color:black;
-text-color:white;
-width:200px;
-border:1px solid white;
-hight:50px;
-line-height:50px;
-text-align:center;
-float:left;
 
-color:white;
-font-size:25px;
-display:block;
-margin-right:2.5px;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+body{
+	margin:10;
+	padding:10;
+	font:Comic Sans MS;
+	font-size:20px;
+}
+ul {
+	margin:0px;
+	padding:0;
+	list-style:none;
+}
+
+ul li {
+	opacity:.8;
+	background-color:black;
+	text-color:white;
+	width:200px;
+	border:1px solid white;
+	hight:50px;
+	line-height:50px;
+	text-align:center;
+	float:left;
+	color:white;
+	font-size:25px;
+	display:block;
+	margin-right:2.5px;
 }
 ul li:hover {
-opacity:.8;
-background-color:#67a399;
+	opacity:.7;
+	background-color:#67a399;
 }
 ul li ul li {
-display:none;
+	display:none;
 }
 ul li:hover ul li {
-display:block;
+	display:block;
 }
 footer{
-position:fixed;
-weight:1000%;
-height:60p;
-background:white;
-bottom:0;
-align:center;
-opacity:.5;
+	position:fixed;
+	weight:100%;
+	height:60p;
+	background:black;
+	bottom:0;
+	opacity:.5;
 }
 .copyright {
-margin:10;
-padding:0;
-line-height:10px;
-color:#black;
+	margin:10;
+	padding:0;
+	line-height:10px;
+	color:white;
 }
 h1{
-color: skyblue;
-font-family: Comic Sans MS;
-display: fixed;
-align: justify;
+	color: skyblue;
+	font-family: Comic Sans MS;
+	display: fixed;
+	align: justify;
 }
 h2{
-color: skyblue;
-font-family: Comic Sans MS;
+	color: skyblue; 
+	font-family: Comic Sans MS;
 }
 a {
-text-decoration:none;
+	text-decoration:none;
+}
+.search_box{
+	position:absolute;
+	top:;
+	left:78%;
+	transform:;
+	background:black;
+	height:40px;
+	border-radius:40px;
+	padding:10px;
+	opacity:.8;
+}
+.input_box{
+	border:none;
+	outline:none;
+	background:none;
+	float:left;
+	padding:0;
+	color:white;
+	font-size:16px;
+	transition:04s all;
+	line-height:40px;
+	width:0px;
+}
+.btn{
+	color:#fff;
+	float:right;
+	text-decoration:none;
+	width:40px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border-radius:60%;
+}
+.search_box:hover .input_box{
+	width:235px;
+	padding:0 6px;
+	opacity:.5;
+}
+.search_box:hover .btn{
+	background-color:#2f3640;
 }
